@@ -15,7 +15,13 @@ public class WebDriverKeywords {
 		driver.findElement(locator).click();
 	}
 
-	public void TypeByLocator(By locator, String text) {
+	public void typeByLocator(By locator, String text) {
 		driver.findElement(locator).sendKeys(text);
 	}
+	
+	public String getTextByLocator(By locator)
+	{
+		return driver.findElement(locator).getText();
+	}
+	//all the webdriver keywords 
 }

@@ -3,7 +3,9 @@ package com.microfocus.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
+import com.microfocus.base.WebDriverKeywords;
+
+public class LoginPage extends WebDriverKeywords {
 
 	private By usernameLocator=By.id("authUser");
 	private By passwordLocator=By.id("clearPass");
@@ -13,24 +15,29 @@ public class LoginPage {
 	private WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
 	public void enterUsername(String username) {
-		driver.findElement(usernameLocator).sendKeys(username);
+		//driver.findElement(usernameLocator).sendKeys(username);
+		super.typeByLocator(usernameLocator, username);
 	}
 
 	public void enterPassword(String password) {
-		driver.findElement(passwordLocator).sendKeys(password);
+		//driver.findElement(passwordLocator).sendKeys(password);
+		super.typeByLocator(passwordLocator, password);
 	}
 
 	public void clickOnLogin() {
-		driver.findElement(loginLocator).click();
+		//driver.findElement(loginLocator).click();
+		super.clickByLocator(loginLocator);
 	}
 
 	public String getInvalidErrorMessage()
 	{
-		return driver.findElement(errorLocator).getText();
+		//return driver.findElement(errorLocator).getText();
+		return super.getTextByLocator(errorLocator);
 	}
 	
 	public String getUsernamePlaceholder()
