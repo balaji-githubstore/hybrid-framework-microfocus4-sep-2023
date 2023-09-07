@@ -8,7 +8,7 @@
 		</run>
 	</groups>
 
-	<parameter name="browsername" value="edge"></parameter>
+	<parameter name="browsername" value="ch"></parameter>
 
 	<test thread-count="5" name="Login UI Test-edge">
 		<classes>
