@@ -1,0 +1,11 @@
+com\microfocus\page\MainPage.class
+com\microfocus\utilities\DataUtils.class
+com\microfocus\test\LoginTest.class
+com\microfocus\page\MessageCenterPage.class
+com\microfocus\test\ZDemo1Test.class
+com\microfocus\test\ZDemo2.class
+com\microfocus\test\LoginUITest.class
+com\microfocus\page\LoginPage.class
+com\microfocus\utilities\ExcelUtils.class
+com\microfocus\base\AutomationWrapper.class
+com\microfocus\test\ZDemo3.class

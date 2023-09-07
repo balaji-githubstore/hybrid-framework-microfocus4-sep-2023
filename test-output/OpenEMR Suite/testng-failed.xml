@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [OpenEMR Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browsername" value="edge"/>
+  <test thread-count="5" parallel="classes" name="Login UI Test-edge(failed)">
+    <groups>
+      <run>
+        <include name="U.*"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.microfocus.test.LoginUITest">
+        <methods>
+          <include name="validatePlaceholderTest"/>
+          <include name="setup"/>
+          <include name="validateTitleTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.microfocus.test.LoginUITest -->
+    </classes>
+  </test> <!-- Login UI Test-edge(failed) -->
+</suite> <!-- Failed suite [OpenEMR Suite] -->
